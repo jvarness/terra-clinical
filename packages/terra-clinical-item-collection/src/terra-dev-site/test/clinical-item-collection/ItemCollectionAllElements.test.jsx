@@ -1,5 +1,6 @@
 import React from 'react';
 import ItemCollection from '../../../ItemCollection';
+import Tag from "terra-tag";
 
 const DefaultItemCollection = () => (
   <ItemCollection
@@ -12,8 +13,9 @@ const DefaultItemCollection = () => (
   >
     <ItemCollection.Item
       startAccessory={<div>S</div>}
+      listItemLayout="oneColumn"
       comment={<ItemCollection.Comment text="test comment" />}
-      endAccessory={<div>E</div>}
+      endAccessory={<Tag text="TBD"/>}
     >
       <ItemCollection.Display text="Display 1" />
       <ItemCollection.Display text="Display 2" />
